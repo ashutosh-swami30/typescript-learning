@@ -6,7 +6,7 @@
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:4-24-trixie",
 	"features": {
 		"ghcr.io/devcontainers-extra/features/nestjs-cli:2": {}
-	}
+	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -18,7 +18,14 @@
 	// "postCreateCommand": "yarn install",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"editor.fontFamily": "'JetBrains Mono', 'Cascadia Code', 'Consolas', 'monospace'",
+				"editor.fontLigatures": true
+			}
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
