@@ -19,3 +19,13 @@ dog.makeSound();
 class Something {
     constructor(private name: string, public age: number) {}
 }
+
+//constructor overloading can also be used in TS
+class AnotherClass {
+    constructor(x: number, y: number);
+    constructor(x:string, y: string);
+
+    constructor(x: any, y: any){
+        return x + y;
+    }
+}
