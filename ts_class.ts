@@ -29,3 +29,22 @@ class AnotherClass {
         return x + y;
     }
 }
+
+//method overriding is also possible in TS
+class ParentClass {
+    greet(): void {
+        console.log("Hello from ParentClass");
+    }
+}
+
+class ChildClass extends ParentClass {
+    greet(): void {
+        console.log("Hello from ChildClass");
+    }
+}
+
+const parentInstance = new ParentClass();
+parentInstance.greet(); // Output: Hello from ParentClass
+
+const childInstance = new ChildClass();
+childInstance.greet(); // Output: Hello from ChildClass
